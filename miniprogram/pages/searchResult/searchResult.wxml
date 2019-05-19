@@ -1,0 +1,15 @@
+<block wx:if="{{showLoading}}">
+ <view class="tip_loading" wx:if="{{showLoading}}">玩命加载中...</view>
+ </block>
+ <block wx:else>
+     <block wx:if="{{movieList.length===0}}">
+         <view class="tip_none-container" >
+             <image class="tip_none-img" src="../../common/images/non-tip.png" mode="scaleToFill" />
+            <text class="tip_none-text" >没有匹配结果！</text>
+         </view>
+     </block>
+     <block wx:else>
+         <import src="../../template/movieList/movieList.wxml"/>
+         <template is="movieList" data="{{movieList:movieList,hasMore:hasMore}}"></template>
+     </block>
+ </block>

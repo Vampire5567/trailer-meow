@@ -1,0 +1,21 @@
+.bg-container {
+    padding: 20rpx;
+}
+.bg-item {
+    position: relative;
+    margin-bottom: 20rpx;
+    border: 4rpx solid #ccc;
+    height: 360rpx;
+    width: 700rpx;
+    border-radius: 10rpx;
+}
+.bg-item image {
+    width: 100%;
+    height: 100%;
+}
+.bg-item text {
+    position: absolute;
+    display: block;
+    bottom: 20rpx;
+    left: 20rpx;
+}

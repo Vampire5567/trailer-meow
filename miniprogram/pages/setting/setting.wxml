@@ -1,0 +1,13 @@
+<view class="setting-container">
+    <view class="personInfo cell" bindtap='goPersonInfo'>
+        <text>个人资料</text>
+        <image src="../../common/images/arrow-right.png" mode="aspectFit"></image>
+    </view>
+    <view class="clearStorage cell" bindtap='clearStorage'>
+        <text>清除缓存</text>
+    </view>
+    <view class="aboutMore cell" bindtap='goAbout'>
+        <text>关于更多</text>
+        <image src="../../common/images/arrow-right.png" mode="aspectFit"></image>
+    </view>
+</view>

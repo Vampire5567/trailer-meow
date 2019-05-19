@@ -1,0 +1,50 @@
+<view class="avatar-container">
+    <image class="avatar-bg" src="{{userMovieInfo.avatarBgUrl}}" mode="scaleToFill"></image>
+    <view class="avatar-skin" bindtap="choseBg"></view>
+    <view class="avatar-wrapper">
+        <image class="avatar-img" src="{{avatarSrc}}" mode="aspectFit"></image>
+        <text class="avatar-name" wx:if="{{userInfoFlag}}">{{avatarName}}</text>
+        <button class="avatar-btn" open-type="getUserInfo" bindgetuserinfo="getuserinfo" wx:else>
+            登录
+        </button>
+    </view>
+</view>
+<view class="other-container">
+    <view class="history-container">
+        <text class="title">观看历史</text>
+        <block wx:if="{{userMovieInfo.historyList.length>0}}">
+            <view class="history-wrapper">
+                <view class="history-item" wx:for="{{userMovieInfo.historyList}}" data-id="{{item._id}}"  data-type="{{item.type}}"  bindtap="goDetail">
+                    <image class="history-img" src="{{item.poster}}"></image>
+                    <text class="history-text">{{item.name}}</text>
+                </view>
+            </view>
+        </block>
+        <block wx:else>
+            <view class="tip_nodata">
+                <text class="tip_nodata-text">您没有看过任何电影哦！</text>
+            </view>
+        </block>
+    </view>
+    <view class="collection-container">
+        <text class="title">我的收藏</text>
+        <block wx:if="{{userMovieInfo.collectionList.length>0}}">
+            <view class="collection-wrapper">
+                <view class="collection-item" wx:for="{{userMovieInfo.collectionList}}" data-id="{{item._id}}" data-type="{{item.type}}" bindtap="goDetail">
+                    <image class="collection-img" src="{{item.poster}}"></image>
+                    <text class="collection-text">{{item.name}}</text>
+                </view>
+            </view>
+        </block>
+        <block wx:else>
+            <view class="tip_nodata">
+                <text class="tip_nodata-text">您没有收藏任何电影哦！</text>
+            </view>
+        </block>
+    </view>
+
+    <view class="set-container" bindtap="goSetting">
+        <text >我的设置</text>
+        <image src="../../common/images/right-arrow.png" mode="scaleToFill"></image>
+    </view>
+</view>

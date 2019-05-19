@@ -1,0 +1,27 @@
+<template name="movieList">
+    <view class="movie-container">
+        <!-- 通过e.currentTarget.dataset.id 即可获取你自己设置的data-id里面值。 -->
+        <!-- 让每个movie带着id跳转到对应的页面 -->
+        <view wx:for="{{movieList}}" wx:key="{{item._id}}" class="movie-item" data-id="{{item._id}}" bindtap="goDetail">
+            <!-- 电影图片都是用设置背景图片的方式,可以更好设置图片的样式 -->
+            <!-- 海报 -->
+            <view class="movie-item-poster poster-cover" style="background-image:url({{item.poster}})"></view>
+            <view class="movie-item-wrapper">
+                <view class="movie-item-wrapper-desc">
+                    <!-- 播放图标 -->
+                    <image class="desc-icon"src="../../common/images/icon-play.png" mode="aspectFit"></image>
+                    <!-- 预告时长 -->
+                    <text class="desc-duration">{{item.duration}}</text>
+                    <!-- 预告类型 -->
+                    <text class="desc-type">#{{item.type}}</text>
+                </view>
+                <!-- 预告名称 -->
+                <view class="movie-item-wrapper-name one-line-cut">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="movie-More">
+        <view class="tip_more" wx:if="{{hasMore}}">全力加载中...</view>
+        <view class="tip_more" wx:else>没有更多了!</view>
+    </view>
+</template>

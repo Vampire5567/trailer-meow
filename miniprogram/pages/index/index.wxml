@@ -1,0 +1,33 @@
+<block wx:if="{{showLoading}}">
+    <view class="tip_loading" wx:if="{{showLoading}}" >
+        正在加载中...
+    </view>
+</block>
+
+<block wx:else>
+    <view class="search" bindtap="goSearch">
+        <icon class="search-icon" type="search" size="9"></icon>
+        <text class="search-text">搜索精彩短片</text>
+    </view>
+
+    <swiper class="" indicator-dots="true" indicator-color="rgba(0,0,0,0.7)" indicator-active-color="rgba(255,255,255,0.7)" autoplay="true" circular="true" >
+        <block wx:for="{{banners}}" wx:key="item.title">
+            <swiper-item >
+                <!-- <image class="swiper-item-image" src="{{item.poster}}" mode="aspectFill" ></image> -->
+                <text class="swiper-item-title" >{{item.title}}</text>
+                <view class="swiper-item-desc" >
+                    <text class="swiper-item-desc-type" >{{item.type}}</text>
+                    <text class="swiper-item-desc-decoration" >{{item.decoration}}</text>
+                    <text class="swiper-item-desc-duration" >{{item.duration}}</text>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+
+
+    <!-- import只引入模板，src填入wxml的相对路径 -->
+    <import src="../../template/movieList/movieList.wxml"/>
+    <!-- template的data属性传入模板所需要的数据 -->
+    <template is="movieList" data="{{movieList:movieList,hasMore:hasMore}}"></template>
+</block>
+

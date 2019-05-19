@@ -1,0 +1,26 @@
+.channel-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.channel-item {
+    position: relative;
+    width: 375rpx;
+    height: 375rpx;
+}
+.channel-item image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.channel-item text {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 32rpx;
+    height: 100%;
+    width: 100%;
+    line-height: 375rpx;
+    text-align: center;
+}

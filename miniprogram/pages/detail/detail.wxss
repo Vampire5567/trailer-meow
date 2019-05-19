@@ -1,0 +1,177 @@
+page {
+  background-color: #fff;
+  color: #000;
+}
+.video-container {
+  height: 420rpx;
+}
+.video-container video {
+  height: 100%;
+  width: 100%;
+}
+.danmu-container {
+  height: 80rpx;
+  background: linear-gradient(
+    to bottom,
+    rgba(202, 216, 213, 1),
+    rgba(202, 216, 213, 0.05)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+}
+.danmu-container .danmu-text {
+  display: inline-block;
+  height: 50rpx;
+  width: 500rpx;
+  /* border: 1px solid #ccc; */
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+  color: #ccc;
+}
+.danmu-container .danmu-btn {
+  width: 100rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #09BB07;
+  margin-left: 10rpx;
+}
+.desc-container {
+  padding: 20rpx 40rpx;
+}
+.desc-title {
+  font-weight: 700;
+  font-size: 34rpx;
+  text-align: center;
+  padding: 0 60rpx;
+}
+.desc-other {
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50rpx;
+  color: #ccc;
+}
+
+.desc-other_collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
+.desc-other_collection icon {
+  margin-right: 6rpx;
+  height: 32rpx;
+  width: 32rpx;
+}
+.desc-content-fold {
+  /* 首行缩进两个文字 */
+  text-indent: 2em;
+  /* 多行文本溢出显示省略号 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  color:#ccc;
+  padding-top: 20rpx;
+}
+.desc-content-unfold {
+  text-indent: 2em;
+  color:#ccc;
+  padding-top: 20rpx;
+}
+/* 演员表 */
+.desc-actor {
+    margin-top: 40rpx;
+}
+.actor-title {
+    font-size: 28rpx;
+    font-weight: 600;
+}
+.actor-msg {
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: flex-start;
+    /* 设置滚动条 */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 100%;
+}
+.actor-item {
+    /* 子元素超出父元素，子元素不缩小 */
+    flex-shrink: 0;
+    width: 150rpx;
+    margin-right: 50rpx;
+}
+.actor-item image {
+    height: 210rpx;
+    width: 100%;
+}
+.actor-item text {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+.like-container {
+    padding: 20rpx 40rpx;
+}
+.like-title {
+    font-size: 28rpx;
+    font-weight: 600;
+    padding-bottom: 20rpx;
+}
+.like-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.like-item {
+    position: relative;
+    flex-shrink: 0;
+    width: 300rpx;
+    height: 200rpx;
+    margin-right: 20rpx;
+    background: no-repeat center center;
+    background-size: cover;
+}
+.like-cover {
+    height: 200rpx;
+    width: 300rpx;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1;
+    font-size: 20rpx;
+}
+.like-item-duration {
+    position: absolute;
+    bottom: 60rpx;
+    left: 20rpx;
+    color: #fff;
+    z-index: 2;
+}
+.like-item-name {
+    position: absolute;
+    bottom: 20rpx;
+    left: 20rpx;
+    color: #fff;
+    z-index: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    /* 让单行文本省略记得要搭配宽度使用 */
+    width: 280rpx;
+}
+
+

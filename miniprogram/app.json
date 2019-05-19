@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/recommend/recommend",
+    "pages/channel/channel",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/searchResult/searchResult",
+    "pages/avatarBg/avatarBg",
+    "pages/setting/setting",
+    "pages/personInfo/personInfo",
+    "pages/about/about",
+    "pages/channelDetail/channelDetail"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "预告喵",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#fff",
+    "backgroundColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath": "common/images/icon-tabbar.png",
+        "selectedIconPath": "common/images/icon-tabbar-selected.png"
+      },
+      {
+        "pagePath": "pages/channel/channel",
+        "text": "频道",
+        "iconPath": "common/images/icon-tabbar.png",
+        "selectedIconPath": "common/images/icon-tabbar-selected.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "看点",
+        "iconPath": "common/images/icon-tabbar.png",
+        "selectedIconPath": "common/images/icon-tabbar-selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "common/images/icon-tabbar.png",
+        "selectedIconPath": "common/images/icon-tabbar-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

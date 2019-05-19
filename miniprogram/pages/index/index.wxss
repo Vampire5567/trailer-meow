@@ -1,0 +1,63 @@
+@import "../../template/movieList/movieList.wxss";
+/* 页面全局样式 */
+page {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 搜索按钮样式 */
+.search {
+  /* flex系列属性可以解决图标和文字居中对齐问题 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  margin: 0 20rpx 20rpx 20rpx;
+  border-radius: 20rpx;
+  background-color: #212121;
+  font-size: 36rpx;
+  color: #ccc;
+}
+.search icon {
+  opacity: 0.7;
+}
+.search text {
+  margin-left: 10rpx;
+  opacity: 0.7;
+}
+
+/* 轮播图样式 */
+swiper {
+    width: 750rpx;
+    height: 380rpx;
+}
+
+swiper-item {
+    /* 设置背景图片位置 */
+    background:no-repeat center center;
+    /* 设置背景图片大小为cover或者100%，把背景图片放大到适合元素容器的尺寸，图片比例不变 */
+    background-size: 100%;
+    background-image: url(http://pr0d5m3ud.bkt.clouddn.com/JJ5OA5b6ld2-q2R8YEjgR.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+swiper-item:nth-child(2){
+    background-image: url(http://pr0d5m3ud.bkt.clouddn.com/9_NpZREid8mBliN6vDKxU.jpg);
+}
+swiper-item:nth-child(3){
+    background-image: url(http://pr0d5m3ud.bkt.clouddn.com/APFWpMhvNnL4HoEO8Lg0g.jpg);
+}
+swiper-item .swiper-item-title {
+    font-weight: 700;
+    font-size: 36rpx;
+    margin-bottom: 8rpx;
+}
+swiper-item .swiper-item-desc {
+    font-size: 26rpx;
+}
+
+swiper-item .swiper-item-desc-decoration {
+    margin:0 10rpx;
+}

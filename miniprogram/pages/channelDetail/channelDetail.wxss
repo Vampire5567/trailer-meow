@@ -1,0 +1,23 @@
+@import '../../template/movieList/movieList.wxss';
+
+
+.tip_none-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tip_none-img {
+    width: 200rpx;
+    height: 200rpx;
+    margin-top: 100rpx;
+    margin-bottom: 20rpx;
+}
+
+.tip_none-text {
+    color: red;
+    font-size: 30rpx;
+}
+

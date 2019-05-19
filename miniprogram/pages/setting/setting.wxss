@@ -1,0 +1,25 @@
+page {
+    background-color: #f3f3f3;
+}
+.cell {
+    height: 100rpx;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20rpx;
+    padding: 0 20rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cell text {
+    display: block;
+    line-height: 100rpx;
+    color: #333;
+    font-size: 28rpx;
+    height: 100rpx;
+    width: 100%;
+}
+.cell image {
+    height: 34rpx;
+    width: 34rpx;
+}

@@ -1,0 +1,8 @@
+<block wx:if="{{showLoading}}">
+ <view class="tip_loading" wx:if="{{showLoading}}">玩命加载中...</view>
+ </block>
+ <block wx:else>
+    <import  src="../../template/movieList/movieList.wxml"></import>
+    <template is="movieList" data="{{movieList:recommendList,hasMore:hasMore}}"></template>
+</block>
+

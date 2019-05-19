@@ -1,0 +1,22 @@
+page {
+  background: #f3f3f3;
+}
+.cell {
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #333;
+  padding: 0 20rpx;
+}
+.cell text {
+    display: block;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+.cell text:nth-child(2){
+    color: #ccc;
+}

@@ -1,0 +1,6 @@
+<view class="channel-container">
+    <view class="channel-item" wx:for="{{typeList}}" wx:key="{{item.url}}" data-type="{{item.type}}" bindtap="goChannelDetail">
+        <image src="{{item.url}}" mode="scaleToFill"></image>
+        <text>{{item.type}}</text>
+    </view>
+</view>

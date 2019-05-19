@@ -1,0 +1,45 @@
+<block wx:if="{{showLoading}}">
+    <view class="tip_loading">内容加载中...</view>
+</block>
+<block wx:else>
+    <view class="video-container">
+    <!-- 播放进度变化时触发，event.detail = {currentTime, duration} 。触发频率 250ms 一次 -->
+        <video id="movieVideo" src="{{movieDetail.trailer}}" autoplay="true" enable-danmu="true" danmu-list="{{movieDetail.danmuList}}" enable-play-gesture="true" bindtimeupdate="videoTimeUpdate"></video>
+    </view>
+    <view class="danmu-container">
+        <input type="text" class="danmu-text" value="{{inputDanmu}}" bindblur="danmuBlur" placeholder="翻滚吧弹幕君！" />
+        <button class="danmu-btn" disabled="{{sendable}}" disabled="{{danmudisabled}}" bindtap="sendDanmu">
+            发送
+        </button>
+    </view>
+    <view class="desc-container">
+        <view class="desc-title">{{movieDetail.name}}</view>
+        <view class="desc-other">
+            <text class="desc-other_left" decode="true">热度 {{movieDetail.wantCount}} / {{movieDetail.rate}}分 \n {{movieDetail.type}}</text>
+            <view class="desc-other_collection" bindtap="collectionToggle">
+                <icon type="success" size="13" color="{{isCollection.color}}"></icon>
+                <text>{{isCollection.text}}</text>
+            </view>
+        </view>
+        <view class="{{descContent}}" bindtap="foldToggle">{{movieDetail.indent}}</view>
+        <view class="desc-actor">
+            <text class="actor-title">导演/演员</text>
+            <view class="actor-msg" >
+                <view class="actor-item" wx:for="{{movieDetail.actor}}" wx:key="{{item.name}}">
+                    <image class="actor-img" src="{{item.avatar}}" mode="aspectFit"></image>
+                    <text class="actor-text">{{item.name}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="like-container" >
+        <text class="like-title" >相似推荐</text>
+        <view class="like-wrapper" >
+             <view class="like-item" bindtap="goDetail" data-id="{{item._id}}" data-type="{{item.type}}" wx:for="{{likeList}}" style="background-image:url({{item.poster}})">
+                 <view class="like-cover"></view>
+                 <view class="like-item-duration">{{item.duration}}</view>
+                 <view class="like-item-name">{{item.name}}</view>
+             </view>
+        </view>
+    </view>
+</block>

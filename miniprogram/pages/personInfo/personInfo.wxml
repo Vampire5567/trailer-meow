@@ -1,0 +1,14 @@
+<view class="personInfo-container" >
+    <view class="cell name" >
+        <text class="name">姓名</text>
+        <text class="name-value">{{userInfo.nickName}}</text>
+    </view>
+        <view class="cell gender" >
+        <text class="gender">性别</text>
+        <text class="gender-value">{{userInfo.gender}}</text>
+    </view>
+        <view class="cell province" >
+        <text class="province">省份</text>
+        <text class="province-value">{{userInfo.province}}</text>
+    </view>  
+</view>

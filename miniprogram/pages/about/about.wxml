@@ -1,0 +1,15 @@
+<view class="about-container">
+    <view class="program-name">预告喵</view>
+    <view class="program-desc title">
+        <text decode="true">简介 \n</text>
+        <text>这是一款基于小程序开发的一款可以浏览预告片、观看并蚊香的应用程序，并且可以根据关键词搜索相关内容，可以浏览历史记录和收藏预告片。</text>
+    </view>
+    <view class="program-author title">
+        <text decode="true">作者 \n</text>
+        <text decode="true">陈锦霞  https://github.com/Vampire5567</text>
+    </view>
+    <view class="program-addr title">
+        <text decode="true">项目地址 \n</text>
+        <text>https://github.com/Vampire5567/trailer-meow</text>
+    </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="search">
+        <icon class="search-icon" type="search" size="9"></icon>
+        <!-- bindconfirm 是点击小键盘上的搜索按钮就触发要执行的方法 -->
+        <input class="search-input" type="text" value="{{inputValue}}" bindinput="setKey" bindconfirm="searchByKey" confirm-type="search" placeholder="搜索精彩短片" />
+</view>
+
+<view class="key-hot key-container">
+        <text class="key-title">热门搜索</text>
+        <view class="key-content">
+                <!-- 通过data-xxxx进行传值取值 -->
+                <text class="key-item" bindtap="searchByKey" data-key="{{hotKeyItem}}" wx:for="{{hotKeyList}}" wx:for-item="hotKeyItem">{{hotKeyItem}}</text>
+        </view>
+</view>
+
+<view class="key-history key-container" >
+        <text class="key-title">历史搜索</text>
+        <view class="key-content">
+                <!-- 通过data-xxxx进行传值取值 -->
+                <text class="key-item" bindtap="searchByKey" data-key="{{historyItem}}" wx:for="{{historyKeyList}}" wx:for-item="historyItem">{{historyItem}}</text>
+        </view>
+</view>

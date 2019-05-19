@@ -1,0 +1,34 @@
+page {
+    background-color: #f3f3f3;
+    height: 100%;
+}
+.about-container{
+    height: 100%;
+    /* background-color: pink; */
+    margin: 0 40rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+.program-name {
+    color:#000;
+    display: block;
+    font-size: 40rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+}
+
+.title text:first-child{
+    color:#000;
+    font-weight: 600;
+    font-size: 32rpx;
+    display: block;
+    height: 100rpx;
+    line-height: 120rpx;
+}
+.title text:nth-child(2){
+    color: #333;
+    margin-top: -10rpx;
+}
