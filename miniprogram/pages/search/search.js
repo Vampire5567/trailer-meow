@@ -1,16 +1,18 @@
 const app = getApp();
+wx.cloud.init()
 Page({
   key: '',
   data: {
     inputValue: '',
-    hotKeyList: ['钢铁侠', '复仇者联盟', '这个杀手不太冷', '奇异博士', '蚁人', '海王', '霸王别姬', '美国队长'],
+    hotKeyList: ['钢铁侠','复仇者联盟','这个杀手不太冷','调音师','老师好'],
     historyKeyList: []
   },
 
   //页面一加载，就把历史信息放在页面上
   onLoad: function (options) {
+    const self=this
     const historyKeyList = app.globalData.userMovieInfo.historyKey
-    this.setData({
+    self.setData({
       historyKeyList: historyKeyList
     })
   },
