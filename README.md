@@ -14,7 +14,7 @@
 ## UI
 
 ![index.png](https://github.com/Vampire5567/trailer-meow/raw/master/program-UI/index.png)
-![detail.png](https://github.com/Vampire5567/trailer-meow/raw/master/program-UI/detail.png)
+![Detail.png](https://github.com/Vampire5567/trailer-meow/raw/master/program-UI/Detail.png)
 ![search.png](https://github.com/Vampire5567/trailer-meow/raw/master/program-UI/search.png)
 ![channel.png](https://github.com/Vampire5567/trailer-meow/raw/master/program-UI/channel.png)
 ![recommend.png](https://github.com/Vampire5567/trailer-meow/raw/master/program-UI/recommend.png)
