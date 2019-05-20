@@ -13,17 +13,11 @@
 
 ## UI
 
-可见文件夹program-UI
+![index.png](https://github.com/Vampire5567/trailer-meow/raw/master/program-UI/index.png)
 
-![channel](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\channel.png)
 
-![index](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\index.png)
 
-![my](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\my.png)
 
-![recommend](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\recommend.png)
-
-![search](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\search.png)
 
 ## 开发相关
 
