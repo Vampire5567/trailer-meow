@@ -13,17 +13,17 @@
 
 ## UI
 
-![1558271515089](C:\Users\14633\AppData\Roaming\Typora\typora-user-images\1558271515089.png)
+可见文件夹program-UI
 
-![1558271590495](C:\Users\14633\AppData\Roaming\Typora\typora-user-images\1558271590495.png)
+![channel](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\channel.png)
 
-![1558271634026](C:\Users\14633\AppData\Roaming\Typora\typora-user-images\1558271634026.png)
+![index](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\index.png)
 
-![1558271683757](C:\Users\14633\AppData\Roaming\Typora\typora-user-images\1558271683757.png)
+![my](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\my.png)
 
-![1558271700908](C:\Users\14633\AppData\Roaming\Typora\typora-user-images\1558271700908.png)
+![recommend](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\recommend.png)
 
-![1558271722983](C:\Users\14633\AppData\Roaming\Typora\typora-user-images\1558271722983.png)
+![search](C:\Users\14633\Desktop\小程序学习\trailer-meow-master\program-UI\search.png)
 
 ## 开发相关
 
